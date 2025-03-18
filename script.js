@@ -48,3 +48,20 @@ const car3 = new Car("BMW", "X5", 2019);
 console.log(car1.getCarInfo()); 
 console.log(car2.getCarInfo()); 
 console.log(car3.getCarInfo()); 
+
+const user = {
+    name: "Stanislav",
+    email: "stanosta@gmail.com",
+    address: {
+        street: "Karhu 45",
+        city: "Vaasa",
+    }
+};
+
+const { name, email, address: { street, city, zip } } = user;
+console.log(`Name: ${name}`);
+console.log(`Email: ${email}`);
+console.log(`Address: ${street}, ${city}, ${zip}`);
+
+const updatedUser = { ...user, email: "stanosta.new@gmail.com" };
+console.log("Updated User:", updatedUser);
