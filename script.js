@@ -40,3 +40,11 @@ class Car {
         return `Car: ${this.year} ${this.make} ${this.model}`;
     }
 }
+
+const car1 = new Car("Chevrolet", "Camaro", 2021);
+const car2 = new Car("Tesla", "Model 3", 2023);
+const car3 = new Car("BMW", "X5", 2019);
+
+console.log(car1.getCarInfo()); 
+console.log(car2.getCarInfo()); 
+console.log(car3.getCarInfo()); 
