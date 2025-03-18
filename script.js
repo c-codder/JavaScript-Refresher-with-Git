@@ -20,3 +20,12 @@ calculateArea(5);
 compareNumbers(5, 6); 
 compareNumbers(6, 5); 
 compareNumbers(15, 15); 
+
+const numbers = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers.map(num => num * 2);
+console.log("Doubled Numbers:", doubledNumbers);
+
+const filteredNumbers = numbers.filter(num => num > 2);
+console.log("Filtered Numbers:", filteredNumbers);
+
