@@ -29,3 +29,14 @@ console.log("Doubled Numbers:", doubledNumbers);
 const filteredNumbers = numbers.filter(num => num > 2);
 console.log("Filtered Numbers:", filteredNumbers);
 
+class Car {
+    constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    getCarInfo() {
+        return `Car: ${this.year} ${this.make} ${this.model}`;
+    }
+}
